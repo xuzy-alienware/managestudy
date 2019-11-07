@@ -68,7 +68,8 @@ public class LoginController {
     @RequestMapping("/user")
     public String getUserInfo(Model model){
         model.addAttribute("user",loginService.getUser());
-        System.out.println(loginService.getUserCount());
+        //System.out.println(loginService.getUserCount());
+        model.addAttribute("aaa",12344);
         return "/userinfo.html";
     }
 
