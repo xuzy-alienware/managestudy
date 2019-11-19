@@ -19,6 +19,10 @@ public class LoginService {
         return user;
     }
 
+    public User getUserByName(String username){
+        return userDao.getUserByName(username);
+    }
+
     public int getUserCount(){
         return userDao.getUserCount();
     }

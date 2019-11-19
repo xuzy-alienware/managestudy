@@ -87,4 +87,11 @@ public class LoginController {
         view.setViewName("/userinfo");
         return view;
     }
+
+    @RequestMapping("/user3")
+    public String getUserInfo3(Model model){
+        model.addAttribute("user",loginService.getUserByName("xuzy5"));
+        model.addAttribute("aaa",12344);
+        return "/userinfo.html";
+    }
 }
